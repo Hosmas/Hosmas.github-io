@@ -22,7 +22,7 @@ getopt를 이용해 -a, -b, -c와 같이 -가 하나인 short option들을 처�
 |-o|short option을 처리|getopt -o abc|
 |-l|long option을 처리|getopt -l help,path|
 
-아래처럼 while문과 함께 getopt를 사용한다면 옵션을 처리할 수 있다.
+아래처럼 while문과 함께 getopt를 사용한다면 쉽게 옵션을 처리할 수 있다.
 ```
 while getopts abc opts; do
         case $opts in
