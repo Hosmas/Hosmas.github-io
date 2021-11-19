@@ -17,7 +17,7 @@ getopt를 이용해 -a, -b, -c와 같이 -가 하나인 short option들을 처�
  
  `getopt -o a:bc`
  
-getopts는 while 구문과 같이 사용하기도 한다.
+아래처럼 while문과 함께 getopt를 사용한다면 옵션을 처리할 수 있다.
 ```
 while getopts abc opts; do
         case $opts in
@@ -26,17 +26,6 @@ while getopts abc opts; do
         b)
         ...
         c)
-        ...
-        esac
-done
-```
-
-
-이 때, 명령어 옵션 뒤에 추가 인자가 필요할 경우에는 문자 뒤에 : 를 붙여야 한다.
-만약 위의 코드에서 -a 옵션에 추가 인자가 필요할 경우에는 a 뒤에 :를 붙여서 다음과 같이 변경해야 한다.
-```
-while getopts a:bc opts; do
-        case $opts in
         ...
         esac
 done
