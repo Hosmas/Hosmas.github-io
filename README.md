@@ -35,3 +35,16 @@ while getopts abc opts; do
         esac
 done
 ```
+
+# sed
+sed 명령어는 텍스트를 변환하거나 필터링하여 출력하는 스트림 편집기이며 원본 파일은 바꾸지 않고 출력 결과만을 변화시키는 특징이 있다.
+
+'sed [ 옵션 ] '명령어' 파일명'
+
+![image](https://user-images.githubusercontent.com/94365974/142720825-4bf2cc06-3738-4427-b70e-b62758403e6d.png)
+
+![image](https://user-images.githubusercontent.com/94365974/142720837-b282c09f-b857-44bb-93e2-e7873a74ddcf.png)
+
+![image](https://user-images.githubusercontent.com/94365974/142720843-88a06c56-6625-4574-bb8b-a53fc13fa4b4.png)
+
+출처: https://tar-cvzf-studybackup-tar-gz.tistory.com/34
